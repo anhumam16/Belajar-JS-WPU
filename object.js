@@ -1,4 +1,4 @@
-// Object Literal
+// // Object Literal
 let santri1 = {
     nama: "Herland",
     power: 10,
@@ -25,7 +25,7 @@ let santri2 = {
     }
 }
 
-// function Declaration
+// // function Declaration
 function Santri(nama, power) {
     let santri = {};
     santri.nama = nama;
@@ -47,6 +47,24 @@ function Santri(nama, power) {
 let Herland = Santri('Herland', 15);
 let Kazlan = Santri('Kazlan', 20);
 
+// Constructor Function
+// keyword new
+function Santrii(nama, power) {
+    this.nama = nama;
+    this.power = power;
 
-// Constructor Function 
+    this.ngaji = function (jam) {
+        this.power += jam;
+        console.log(`Halo ${nama}, powermu bertambah`);
+    }
+
+    this.ngopi = function (lama) {
+        this.power -= lama;
+        console.log(`Halo ${nama}, powermu berkurang`);
+    }
+}
+
+let Herland = new Santrii('Herland', 15);
+
+
 // Object.create
