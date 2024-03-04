@@ -11,3 +11,7 @@ let santri = function(nama) {
 // Arrow Function satu parameter satu eksekusi
 let santri = nama => `Halo ${nama}, selamat pagi`;
 console.log(santri('Humam'));
+
+// Arrow Function dua parameter satu eksekusi 'Wajib pakai kurung buka'
+let santri = (nama, waktu) => `Halo ${nama}, selamat ${waktu}`;
+
